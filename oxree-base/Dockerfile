@@ -9,7 +9,8 @@ RUN mkdir -p /home/app/.font \
     --silent \
     --retry 3 \
     --remote-name \
-    "http://dl.ipafont.ipa.go.jp/IPAexfont/ipaexg00301.zip" \
-  && unzip ipaexg00301.zip \
-  && rm -f ipaexg00301.zip
+    "http://jaist.dl.sourceforge.jp/mix-mplus-ipa/63544/migmix-2p-20150712.zip" \
+  && unzip migmix-2p-20150712.zip \
+  && rm -f migmix-2p-20150712.zip \
+  && fc-cache -fv
 
