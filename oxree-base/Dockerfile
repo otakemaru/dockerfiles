@@ -1,6 +1,6 @@
 FROM otakemaru/passenger-ruby22:5.0.23
 RUN apt-get update \
-  && apt-get install -y wkhtmltopdf unzip \
+  && apt-get install -y unzip \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN mkdir -p /home/app/.font \
   && cd /home/app/.font \
