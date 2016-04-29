@@ -5,4 +5,7 @@ RUN apt-get update \
   && apt-get upgrade -y -o Dpkg::Options::="--force-confold" \
   && npm install -g npm \
   && rm -rf /pd_build \
-  && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+  && gem update --system \
+  && gem update bundler \
+  && gem cleanup
