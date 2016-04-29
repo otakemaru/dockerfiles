@@ -1,4 +1,4 @@
-FROM otakemaru/passenger-ruby22:5.0.23
+FROM otakemaru/passenger-ruby22:5.0.28
 RUN apt-get update \
   && apt-get install -y unzip \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
