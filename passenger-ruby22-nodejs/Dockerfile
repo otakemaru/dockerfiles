@@ -6,6 +6,5 @@ RUN apt-get update \
   && npm install -g npm \
   && rm -rf /pd_build \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-  && gem update --system \
   && gem update bundler \
   && gem cleanup
